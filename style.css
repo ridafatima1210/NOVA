@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+.main {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: radial-gradient( #3f87a6, #512d38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container {
+    padding: 10px;
+}
+.main .image-container .image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container .image img {
+    width: 350px;
+    align-items: center;
+}
+
+div.at-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+	.at-item {
+		color: #0d1321; font-weight:bold; font-size:3em;
+		
+		animation-name: text-flicker-out-glow;
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: none;
+
+	}
+	@keyframes text-flicker-out-glow {
+			
+		0% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.6),0 0 60px rgba(0,0,0,.45),0 0 110px rgba(0,0,0,.25),0 0 100px rgba(0,0,0,.1);
+		}
+		13% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.6),0 0 60px rgba(0,0,0,.45),0 0 110px rgba(0,0,0,.25),0 0 100px rgba(0,0,0,.1);
+		}
+		14% {
+			opacity:0;
+			text-shadow:none;
+		}
+		15% {
+			opacity:0;
+			text-shadow:none;
+		}
+		16% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.4),0 0 110px rgba(0,0,0,.2),0 0 100px rgba(0,0,0,.1);
+		}
+		22% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.4),0 0 110px rgba(0,0,0,.2),0 0 100px rgba(0,0,0,.1);
+		}
+		23% {
+			opacity:0;
+			text-shadow:none;
+		}
+		24% {
+			opacity:0;
+			text-shadow:none;
+		}
+		25% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.35),0 0 100px rgba(0,0,0,.1);
+		}
+		34% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.35),0 0 100px rgba(0,0,0,.1);
+		}
+		35% {
+			opacity:0;
+			text-shadow:none;
+		}
+		39% {
+			opacity:0;
+			text-shadow:none;
+		}
+		40% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.35);
+		}
+		42% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.55),0 0 60px rgba(0,0,0,.35);
+		}
+		43% {
+			opacity:0;
+			text-shadow:none;
+		}
+		44% {
+			opacity:0;
+			text-shadow:none;
+		}
+		45% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.25);
+		}
+		50% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.25);
+		}
+		54% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.25);
+		}
+		55% {
+			opacity:0;
+			text-shadow:none;
+		}
+		69% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.25);
+		}
+		70% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.45),0 0 60px rgba(0,0,0,.25);
+		}
+		71% {
+			opacity:0;
+			text-shadow:none;
+		}
+		78% {
+			opacity:0;
+			text-shadow:none;
+		}
+		79% {
+			opacity:1;
+			text-shadow:0 0 30px rgba(0,0,0,.25);
+		}
+		80% {
+			opacity:0;
+			text-shadow:none;
+		}
+		88% {
+			opacity:0;
+			text-shadow:none;
+		}
+		89% {
+			opacity:1;
+			text-shadow:none;
+		}
+		90% {
+			opacity:0;
+			text-shadow:none;
+		}
+		100% {
+			opacity:0;
+		}
+    }
+
+.main .image-container p {
+    color: #f5f8f8;
+    text-align: center;
+    margin-top: 5%;
+}
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: #d0efb1;
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main .input .talk i {
+    font-size: 20px;
+    color: #000;
+}
+
+.main .input .content {
+    color: #003d5b;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.trail {
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: #E6E8FA;
+	pointer-events: none;
+  }
